@@ -19,8 +19,22 @@
 * ***Model Accuracy & Loss :*** 
    * ``loss:0.0345; accuracy:1.0000; val_loss:0.0244; val_accuracy:1.0000``
 
-### To be Continue
-**MODEL :** rock_paper_scissor classifier-custom model
-* ***Model Architecture :***
+
+**MODEL :** rock_paper_scissor classifier-Inception model 
+* ***Model Architecture :*** transfer learning(Inception_v3 model)
+     * Inception_v3: upto ("mixed7") + 
+     * Flatten()
+     * Dense(512,activation='relu')
+     * Dense(256,activation='relu')
+     * Dense(128,activation='relu')
+     * Dropout(0.4)
+     * Dense(3,activation='softmax')
+    
+* ***Info:*** 
+    * ``optimizer:Adam(lr=0.0001); loss:'categorical_crossentropy'; metrics:'accuracy'; epochs:5`` 
 
 * ***Model Accuracy & Loss :*** 
+   * ``loss:0.0015; accuracy:1.0000; val_loss:1.3500e-04; val_accuracy: 1.0000``  
+
+
+### To be Continue
